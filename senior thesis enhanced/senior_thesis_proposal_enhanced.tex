@@ -42,10 +42,15 @@ Allegheny College \\
   %However, only the gyroscope and accelerometer were successfully implemented.
   \\
   
-  %put this some where
-  %As a safety precaution the plane will feature a separate processor that will over ride the programming to allow for manuel control of the airplane.
   
-  %paragraph about the arduino
+  
+  %paragraph about the Arduino and Ardupilot
+  
+  
+  		%put this some where
+  		%As a safety precaution the plane will feature a separate processor that will over ride the programming to allow for  manual control
+  		
+  		An Arduino is a small affordable device that can be bought from http://Arduino.cc/EN/.  The Arduino allows for average end-users to experiment with robotics the Arduino is “intended for artists, designers, hobbyists, and anyone interested in creating interactive objects or environments”.  The Arduino board is set up in such a way that users can use both digital and analog inputs in order for the Arduino to sense its environment.  During this project we plan to use a programming language called Occam-Pi.  Occam-Pi is a process oriented programming language.  This type of programming language focuses on processes.  However, Occam-Pi is not a native language on the Arduino so we have to install it on top of the existing language that is already on the Arduino.  For the purposes of my project we will be using what is called an Ardupilot
   
   %paragraph about gyroscopes 
   
@@ -56,8 +61,12 @@ Allegheny College \\
   %paragraph about GPS
   
   %maybe a paragraph about Occam~-~∏
+  
+  Occam-~$\Pi$
+  
+  
 
-  Currently the plane can fly in a straight line using only the gyroscope and accelerometer.  However, the airplane has yet to execute a turn without .  In part, this is because turns require a certain airspeed in order to execute successfully.  This is a major challenge in programming an airplane because the accelerometer becomes easily confused due to multiple forces such as gravity and other G forces pulling in different directions.  The conflicting sensor data is hard to interpret because the accelerometer reports the amount of force that it is pulled in.  ****fill in more about why this matters****d
+  Currently the plane can fly in a straight line using only the gyroscope and accelerometer.  However, the airplane has yet to execute a turn without .  In part, this is because turns require a certain airspeed in order to execute successfully.  This is a major challenge in programming an airplane because the accelerometer becomes easily confused due to multiple forces such as gravity and other G forces pulling in different directions.  The conflicting sensor data is hard to interpret because the accelerometer reports the amount of force that it is pulled in. ****fill in more about why this matters****d
   
   Implementing a wind speed sensor will enable the plane to measure its speed while turning.  The plane can use the information to keep the proper air speed to stay aloft while turning.  The second sensor is the GPS which has a two and a half meeter resolution.  This means that the GPS sensor will accurately pin point the planes position within a imaginary bubble two and a half meeter's wide.  
 
@@ -164,9 +173,11 @@ Logically, some parts of evaluating whether or not the project works will be cle
 \vspace*{-.1in}
 
 \begin{itemize}
-\item 3-4 weeks research.
-\item 2-3 weeks fix broken plane.
-\item 2-4 weeks send plane up in remote control with sensors to gather data and understanding.
+\item 1 week to research how the gps works
+\item 2-3 weeks test and build general direction based routing algorithm
+\item 1 weekend to test gps and pitot tube walking.
+\item 1 weekend to test gps and pitot tube while in car.
+\item 1 weekend to capture raw data during remote control flight of plain.
 \item 4-7 weeks program plane and test.
 \item 2 weeks write proposal.
 \item{
